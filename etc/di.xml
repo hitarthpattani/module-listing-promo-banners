@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     HitarthPattani\ListingPromoBanners
+ * @author      Hitarth Pattani <hitarthpattani@gmail.com>
+ * @copyright   Copyright © 2021. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="HitarthPattani\ListingPromoBanners\ViewModel\PromoBanners">
+		<arguments>
+			<argument name="templateProcessor" xsi:type="object">Magento\Widget\Model\Template\Filter</argument>
+		</arguments>
+	</type>
+</config>

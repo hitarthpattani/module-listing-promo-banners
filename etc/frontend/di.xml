@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     HitarthPattani\ListingPromoBanners
+ * @author      Hitarth Pattani <hitarthpattani@gmail.com>
+ * @copyright   Copyright © 2021. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Helper\Product\ProductList">
+        <plugin name="HitarthPattani_ListingPromoBanners::pager_config_product_list" type="HitarthPattani\ListingPromoBanners\Plugin\Frontend\PagerConfigProductList" />
+    </type>
+</config>

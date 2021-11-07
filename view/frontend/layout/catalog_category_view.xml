@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     HitarthPattani\ListingPromoBanners
+ * @author      Hitarth Pattani <hitarthpattani@gmail.com>
+ * @copyright   Copyright © 2021. All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="category.products.list">
+			<action method="setTemplate" ifconfig="catalog/listing_promo_banners/enabled">
+				<argument name="template" xsi:type="string">HitarthPattani_ListingPromoBanners::product/list.phtml</argument>
+			</action>
+			<arguments>
+				<argument name="promo_banners_view_model" xsi:type="object">HitarthPattani\ListingPromoBanners\ViewModel\PromoBanners</argument>
+			</arguments>
+		</referenceBlock>
+    </body>
+</page>
